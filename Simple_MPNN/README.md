@@ -4,7 +4,7 @@ Ref:
 1. Gilmer *et al.*, [Neural Message Passing for Quantum Chemistry](https://arxiv.org/pdf/1704.01212.pdf), arXiv, 2017.  
 [Tensorflow implementation by Gilmer](https://github.com/brain-research/mpnn)  
 2. [CS147 - Deep Learning - Brown University](https://brown-deep-learning.github.io/dl-website-2020/projects/public/hw5-mpnns/hw5-mpnns.html)  
-3. [Deep Graph Library](https://www.dgl.ai/)  
+3. [Deep Graph Library (DGL)](https://www.dgl.ai/)  
 
 ### 1. Data structure of a molecule: molecule.py  
 - nodes: a list contains the atoms in molecule which are represented by their atomic numbers (not their symbols)  
@@ -19,4 +19,5 @@ Ref:
   119 is number of elements of periodic table. 
 - Train/test split of a list of molecules is for example 0.9/0.1   
 
-### Model: mpnn.py 
+### 4. MPPN Model for node features only thus it is a simple model: mpnn.py  
+- Implemented MPNN mode using DGL
