@@ -1,9 +1,9 @@
 # Message Passing Neural Networks 
-Pytorch Implementation of Message Passing Neural Networks (MPNN) has two parts.  
-- Part I. MPNN Toy Model  
-- Part II. Pytorch implementation of the paper
-Gilmer *et al.*, [Neural Message Passing for Quantum Chemistry](https://arxiv.org/pdf/1704.01212.pdf), arXiv, 2017.  
-[Tensorflow implementation by Gilmer](https://github.com/brain-research/mpnn)    
+Pytorch Implementation of Message Passing Neural Networks (MPNN).  
+Ref: 
+1. Gilmer *et al.*, [Neural Message Passing for Quantum Chemistry](https://arxiv.org/pdf/1704.01212.pdf), arXiv, 2017.  
+[Tensorflow implementation by Gilmer](https://github.com/brain-research/mpnn)  
+2. [CS147 - Deep Learning - Brown University](https://brown-deep-learning.github.io/dl-website-2020/projects/public/hw5-mpnns/hw5-mpnns.html)
 
 ## PART I. MPNN Toy Model  
 ### 1. Data structure of a molecule: molecule.py  
