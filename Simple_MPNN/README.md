@@ -1,4 +1,4 @@
-# Message Passing Neural Networks 
+## Message Passing Neural Networks 
 Pytorch Implementation of Message Passing Neural Networks (MPNN).  
 Ref: 
 1. Gilmer *et al.*, [Neural Message Passing for Quantum Chemistry](https://arxiv.org/pdf/1704.01212.pdf), arXiv, 2017.  
