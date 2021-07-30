@@ -3,9 +3,9 @@ Pytorch Implementation of Message Passing Neural Networks (MPNN).
 Ref: 
 1. Gilmer *et al.*, [Neural Message Passing for Quantum Chemistry](https://arxiv.org/pdf/1704.01212.pdf), arXiv, 2017.  
 [Tensorflow implementation by Gilmer](https://github.com/brain-research/mpnn)  
-2. [CS147 - Deep Learning - Brown University](https://brown-deep-learning.github.io/dl-website-2020/projects/public/hw5-mpnns/hw5-mpnns.html)
+2. [CS147 - Deep Learning - Brown University](https://brown-deep-learning.github.io/dl-website-2020/projects/public/hw5-mpnns/hw5-mpnns.html)  
+3. [Deep Graph Library](https://www.dgl.ai/)  
 
-## PART I. MPNN Toy Model  
 ### 1. Data structure of a molecule: molecule.py  
 - nodes: a list contains the atoms in molecule which are represented by their atomic numbers (not their symbols)  
 - edges: a list of tuple and each tuple is the bond between ith and jth nodes  
@@ -19,12 +19,4 @@ Ref:
   119 is number of elements of periodic table. 
 - Train/test split of a list of molecules is for example 0.9/0.1   
 
-## PART II. Pytorch implementation of the above paper
-### 1. Dataset  
-- Download QM9 dataset  
-  ```commandline
-   (base) C:\AI\MPNN>python preprocessing.py qm9 -p data\qm9
-  ```
-- QM9 has about 139K small organic molecules containing up to 9 heavy atoms (C, O,
-N, or F; excluding H) along with their quantum properties.
-- Data size: ~550MB
+### Model: mpnn.py 
