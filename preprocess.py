@@ -179,10 +179,10 @@ class MoleculeDataset(Dataset):
             - Is not needed for PyG's InMemoryDataset
         """
         if self.test:
-            data = torch.load(os.path.join(path_proccessed, f'data_test_{idx}.pt'))  # in Colab
+            data = torch.load(os.path.join(self.path_proccessed, f'data_test_{idx}.pt'))  # in Colab
             # data = torch.load(os.path.join(self.processed_dir, f'data_test_{idx}.pt'))
         else:
-            data = torch.load(os.path.join(path_proccessed, f'data_{idx}.pt'))  # in Colab
+            data = torch.load(os.path.join(self.path_proccessed, f'data_{idx}.pt'))  # in Colab
             # data = torch.load(os.path.join(self.processed_dir, f'data_{idx}.pt'))
         return data
 
