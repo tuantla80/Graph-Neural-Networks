@@ -12,7 +12,7 @@ Pytorch Implementation of Graph Neural Networks
   - The second column is activity
   - The third column is HV_active, which is a binary class. If HIV_active = 1, the molecule is able to inhibit the HIV (human immunodeficiency virus).  
 - <b>Train/test split at sample.py</b>
-  - Since class HIV_active is unbalance, in training datasets we use oversampling method to make it to be balanced.
+  - Since class HIV_active is unbalance, in training datasets we use oversampling positive class (HIV_active=1) to make it to be balanced.
 ## II. Preprocess  
 - File preprocess.py. To transform molecules to graph data.  
 - For each molecule:  
@@ -39,8 +39,9 @@ Pytorch Implementation of Graph Neural Networks
   
   ## III. Model  
   - File model.py  
-  - Using 3 GAT (Graph Attention Convolution) layers, and 3 TopKPooling layers.  
+  - Using 3 GATConv (Graph Attention Convolution) layers, and 3 TopKPooling layers.  
     - They are hyperparameters and depending on the size of molecule graphs  
-   - Also used 3 attention heads for the attention mechanism  
-   - Use a Fully connected network to transform them back to the initial node feature size.  
-    - 3 heads -> generate 3 different output vectors (3 times node embedding), therefore, need to convert them back to original size to pass it to the next layer.
+   - Also using 3 attention heads for the attention mechanism  
+   - Using a Fully connected network to transform them back to the initial node feature size.  
+     - 3 heads -> generate 3 different output vectors (3 times node embedding), therefore, need to convert them back to original size to pass it to the next layer.  
+     - 
