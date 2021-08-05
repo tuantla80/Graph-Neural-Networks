@@ -35,4 +35,9 @@ Pytorch Implementation of Graph Neural Networks
     Rings
     ```    
   - Calculate the adjacency list of connections.   
-  (Note: Need specify for both directions. Eg. Node i -> Node j and Node j -> Node i)
+  (Note: Need specify for both directions. Eg. Node i -> Node j and Node j -> Node i)  
+  
+  ## III. Model  
+  - File model.py  
+  - Using 3 GAT (Graph Attention Convolution) layers and 3 TopKPooling layers.  
+    - They are hyperparameters and depending on the size of molecule graphs  
