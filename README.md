@@ -10,7 +10,9 @@ Pytorch Implementation of Graph Neural Networks
   ```  
   - The first column is SMILES string of a molecule. 
   - The second column is activity
-  - The third column is HV_active, which is a binary class. If HIV_active = 1, the molecule is able to inhibit the HIV (human immunodeficiency virus).
+  - The third column is HV_active, which is a binary class. If HIV_active = 1, the molecule is able to inhibit the HIV (human immunodeficiency virus).  
+- Train/test split at sample.py  
+  - Since class HIV_active is unbalance, in training datasets we use oversampling method to make it to be balanced.
 ## II. Preprocess  
 - File preprocess.py. To transform molecules to graph data.  
 - For each molecule:  
