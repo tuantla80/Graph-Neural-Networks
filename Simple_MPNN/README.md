@@ -17,7 +17,7 @@ Ref:
 - Read sdf file and store output as a list of molecule (as indicated in 2.)
 - Transform nodes of a molecule to 2D numpy array (num_atoms, 119) in which each atomic atom is transformed to 1 hot vector with length=119  
   119 is number of elements of periodic table. 
-- Train/test split of a list of molecules is for example 0.9/0.1   
+- Train/test split of a list of molecules. Ex 0.9/0.1   
 
 ### 4. MPPN Model for node features only thus it is a simple model: mpnn.py  
 - Implemented MPNN mode using DGL
